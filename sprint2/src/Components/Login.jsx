@@ -17,7 +17,7 @@ function Login() {
 
         setLoginData({
             ...loginData,
-            [name]: value
+            [name]: value 
         })
     }
     
