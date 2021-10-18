@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import Cart from './Cart';
+import Homes from './Home';
 import styles from "./Login.module.css";
 function Login() {
     const initState = {
@@ -35,8 +35,10 @@ function Login() {
     }
     if (isAuth)
     {
-        return <Cart/>
-        }
+      
+        return <Homes />
+        console.log("In Home");
+        }    
     return (
         <div>
             <h1 className={styles.heading}>Login Page</h1>
