@@ -1,0 +1,29 @@
+.box {
+  height: 300px;
+  width: 360px;
+  background-color: rgb(255, 230, 204);
+  border: 2px solid rgb(216, 156, 4);
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  margin: auto;
+}
+
+input {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+}

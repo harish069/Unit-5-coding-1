@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import Cart from './Cart';
+import styles from "./Login.module.css";
 function Login() {
     const initState = {
         username:"",
@@ -38,10 +39,12 @@ function Login() {
         }
     return (
         <div>
-            <h1>Login Page</h1>
+            <h1 className={styles.heading}>Login Page</h1>
+            <div className={styles.box}>
             <input type="text" placeholder="Enter Username" name="username" onChange={handleChange} />
             <input type="password" placeholder="Enter password" name="password" onChange={handleChange} />
-            <button onClick={handleLogin}>Login</button>
+                <button onClick={handleLogin}>Login</button>
+                  </div>
         </div>
     )
 }
